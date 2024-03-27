@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store Catalogue</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Product styles */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .product p {
+      color: #888;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    button {
+      background-color: #27ae60;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2ecc71;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Subsection headings */
+    .subsection-heading {
+      font-size: 1.5em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">GAUTAM GARMENTS</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="subsection-heading">Men</h2>
+      <div class="products">
+        <div class="product">
+          <!-- Product 1 details -->
+        </div>
+        <div class="product">
+          <!-- Product 2 details -->
+        </div>
+        <div class="product">
+          <!-- Product 3 details -->
+        </div>
+        <!-- Add more products for Men -->
+      </div>
+    </section>
+
+    <section>
+      <h2 class="subsection-heading">Women</h2>
+      <div class="products">
+        <div class="product">
+          <!-- Product 4 details -->
+        </div>
+        <div class="product">
+          <!-- Product 5 details -->
+        </div>
+        <div class="product">
+          <!-- Product 6 details -->
+        </div>
+        <!-- Add more products for Women -->
+      </div>
+    </section>
+
+    <section>
+      <h2 class="subsection-heading">Kids</h2>
+      <div class="products">
+        <div class="product">
+          <!-- Product 7 details -->
+        </div>
+        <div class="product">
+          <!-- Product 8 details -->
+        </div>
+        <div class="product">
+          <!-- Product 9 details -->
+        </div>
+        <!-- Add more products for Kids -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 Your Store. All rights reserved.
+  </footer>
+</body>
+</html>
